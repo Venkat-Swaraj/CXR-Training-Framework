@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &2035939079307390310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336840427278226463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc937e678155e4d86feeb9248cca97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GrabBehaviour: 0
+  PoseType: 0
+  TrackingType: 0
+  HoldType: 1
+  GrabControl: 0
+  OverrideGrabTrigger: 0
+  GrabTrigger: 0
+  RequireLineOfSight: 1
+  PoseImmediately: 0
+  ParentHandModel: 0
+  BreakDistance: 1
+  BreakDistanceSource: 0
+  RemainsKinematic: 1
+  Stationary: 0
+  ReleasedAngularConversionFactor: 0
+  ReleasedVelocityFactor: 1
+  ReleasedAngularFactor: 1
+  GrabIndicator: {fileID: 0}
+  ForceGrabIndicator: {fileID: 0}
+  ShowGrabIndicator: 1
+  ShowTriggerGrabIndicator: 1
+  ShowForceGrabIndicator: 1
+  ForceGrabbable: 1
+  ForcePullOverride: {fileID: 0}
+  JointOverride: {fileID: 0}
+  OneHandJointSettings: {fileID: 0}
+  TwoHandJointSettings: {fileID: 0}
+  PullingSettingsOverride: {fileID: 0}
+  PalmCenterOfMass: 0
+  HandGrabbedClip: {fileID: 0}
+  StartingSocket: {fileID: 0}
+  LinkStartingSocket: 0
+  SocketGrabPoints: []
+  Rigidbody: {fileID: 0}
+  AutoApplyLayer: 1
+  RequireOverlapClearance: 0
+  OverlapTimeout: 0.1
+  FinalJointMaxAngle: 15
+  FinalJointTimeout: 0.25
+  CollisionParents: []
+  ExtraIgnoreCollisionParents: []
+  GrabColliders: []
+  ConsiderGrabPointAngle: 1
+  UseColliderClosestPoint: 1
+  DisableHandCollision: 0
+  AllowMultiplayerSwap: 0
+  MasterGrabbable: {fileID: 0}
+  LinkedGrabbables: []
+  CollisionDetection: 2
+  PhysicsPoserFallback: 1
+  OverrideMaxDistanceBehaviour: 0
+  MaxDistanceBehaviour: 0
+  ShowBoundingBox: 0
+  DrawCenterOfMass: 0
+  GrabPoints: []
+  Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  Grabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  Released:
+    m_PersistentCalls:
+      m_Calls: []
+  HoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  HoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  Collided:
+    m_PersistentCalls:
+      m_Calls: []
+  Destroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  HandGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  HandReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  HandFullReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  Socketed:
+    m_PersistentCalls:
+      m_Calls: []
+  UnSocketed:
+    m_PersistentCalls:
+      m_Calls: []
+  GrabPointsMeta: []
+  Grabbers: []
+  HandGrabbers: []
+  Stabbers: []
+  Stabbable: {fileID: 0}
+--- !u!114 &7026808606842348050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336840427278226463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ef16e9c045bd34f89c1cc5307f66f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _XRGrabInteractable: {fileID: 2035939079307390310}
+--- !u!114 &6337988371707908509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336840427278226463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1da8719e40004749844095c0be773f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DriverExtractedForGrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1336840427278226456}
+        m_TargetAssemblyTypeName: GuidedSnapEnabledElement, Assembly-CSharp
+        m_MethodName: RegisterElementDriver
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DriverExtractedForUngrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1336840427278226456}
+        m_TargetAssemblyTypeName: GuidedSnapEnabledElement, Assembly-CSharp
+        m_MethodName: UnregisterElementDriver
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &3839130317162261464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2867172179243401152, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: _rotationProgress
+      value: 0.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401152, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: _xrFrameworkTransformControl
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401159, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_Name
+      value: HVRInsertableBolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28553736
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3278835
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16275348
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99358404
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.113096654
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867172179243401180, guid: 0c334124a0831c445893359e65c960c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c334124a0831c445893359e65c960c9, type: 3}
+--- !u!1 &1336840427278226463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2867172179243401159, guid: 0c334124a0831c445893359e65c960c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3839130317162261464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336840427278226456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2867172179243401152, guid: 0c334124a0831c445893359e65c960c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3839130317162261464}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336840427278226463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536cf44c0b1b9014b830b4f48d38f289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
